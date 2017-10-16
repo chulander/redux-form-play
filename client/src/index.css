@@ -3,3 +3,34 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+.container {
+  margin: 30px 0;
+  max-width: 600px;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.title {
+  margin: 0 0 30px;
+  h2 {
+    font-weight: normal;
+    float: left;
+  }
+  .delete {
+    float: right;
+    @include buttonWithLinkStyle($action-color);
+  }
+}
+
+.error {
+  color: $color-status-attention;
+  font-size: 12px;
+}
+
+.readOnly {
+  input, label { color: $light-gray; }
+}
